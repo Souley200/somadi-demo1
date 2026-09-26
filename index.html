@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Comptoir — Restaurant</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f5ef;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #171717;
+      color: white;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: clamp(45px, 8vw, 80px);
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: white;
+      color: #171717;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 70px 8%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 35px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .contact {
+      background: #171717;
+      color: white;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">LE COMPTOIR</div>
+
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Le Comptoir</h1>
+      <p>Cuisine généreuse, produits frais & moments conviviaux.</p>
+      <a class="button" href="#menu">Découvrir le menu</a>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>Notre menu</h2>
+    <p>Quelques incontournables de la maison.</p>
+
+    <div class="menu">
+
+      <div class="card">
+        <h3>Burger Maison</h3>
+        <p>Steak haché, cheddar, salade, tomate et sauce maison.</p>
+        <div class="price">14,90 €</div>
+      </div>
+
+      <div class="card">
+        <h3>Poulet rôti</h3>
+        <p>Poulet rôti accompagné de pommes de terre et salade.</p>
+        <div class="price">16,90 €</div>
+      </div>
+
+      <div class="card">
+        <h3>Pâtes du moment</h3>
+        <p>Une recette préparée chaque semaine avec des produits frais.</p>
+        <div class="price">13,90 €</div>
+      </div>
+
+      <div class="card">
+        <h3>Dessert maison</h3>
+        <p>Une douceur préparée par notre équipe.</p>
+        <div class="price">6,50 €</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Nous trouver</h2>
+    <p>12 rue de la République</p>
+    <p>75000 Paris</p>
+    <br>
+    <p>📞 01 23 45 67 89</p>
+  </section>
+
+  <footer>
+    © 2026 Le Comptoir — Site réalisé par SOMADI
+  </footer>
+
+</body>
+</html>
